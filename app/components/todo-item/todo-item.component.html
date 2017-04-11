@@ -1,0 +1,9 @@
+<button class="one wide column" (click)="onToogle()">
+    <i class="icon" [ngClass]="{'square outline': !todo.done, 'checkmark box': todo.done}"></i>
+</button>
+
+<span class="thirteen wide column">{{ todo.title }}</span>
+
+<button class="two wide column" (click)="onDelete()">
+    <i class="icon delete"></i>
+</button>

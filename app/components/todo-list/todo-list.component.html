@@ -1,0 +1,10 @@
+<div *ngIf="todos.length" class="ui text container items">
+    <todo-item 
+                class="ui segment grid" 
+                *ngFor="let todo of todos" 
+                [ngClass]="{'completed': todo.done}" 
+                [todo]="todo" 
+                (toogle)="toogle(todo)" 
+                (delete)="delete(todo)"
+    ></todo-item>
+</div>

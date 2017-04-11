@@ -1,0 +1,6 @@
+<form class="ui container segment text blue" (ngSubmit)="addTodo()">
+    <div class="ui action input">
+        <input type="text" name="newTitle" placeholder="Что нужно сделать?" [(ngModel)]="newTitle" required>
+        <button type="submit" class="ui button">Добавить</button>
+    </div>
+</form>
